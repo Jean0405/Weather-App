@@ -75,11 +75,18 @@ video {
     border-radius: 50%;
     font-size: 1rem;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.6s ease-out;
+}
+.container .search-container #form-search button:hover{
+    background-color: rgb(79, 184, 255);
 }
 
 .container .search-container i {
     font-size: 2rem;
+    transition: 0.6s;
 }
+
 
 /* IMG WEATHER */
 .img-container {
@@ -100,8 +107,13 @@ video {
 .temperature-container {
     width: 100%;
     display: flex;
+    margin-top: 1.7rem;
     flex-direction: column;
     align-items: center;
+}
+.temperature-container .img-weather{
+    width: 18rem;
+    height: 18rem;
 }
 
 .temperature-container .temperature {
@@ -117,7 +129,7 @@ video {
 /* WEATHER DETAILS */
 .weather-details {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
