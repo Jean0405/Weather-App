@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS GOOGLES  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <video src="./img/background/bg-rain.mp4" autoplay muted loop></video>
+    <div class="container">
+        <!-- SEARCH CONTAINER -->
+        <div class="search-container">
+            <i class="fa-solid fa-location-dot"></i>
+            <form action="" id="form-search">
+                <input type="text" name="city" placeholder="Enter your city">
+                <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+            </form>
+        </div>
+
+        <!-- IMAGES CONTAINER -->
+        <div class="img-container">
+            <img src="./img/not-found.png" alt="">
+            <p>¡ERROR! wrong location</p>
+        </div>
+
+        <!-- TEMPERATURE CONTAINER -->
+        <div class="temperature-container">
+            <img src="" alt="">
+            <p class="temperature">20 <span>°C</span></p>
+            <p class="description">Scattered Clouds</p>
+        </div>
+
+        <!-- WEATHER DESCRIPTION -->
+        <div class="weather-details">
+            <!-- Humidity -->
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="humidity-details">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <!-- WIND -->
+            <div class="wind">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="wind-details">
+                    <span></span>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FONTS ICONS -->
+    <script src="https://kit.fontawesome.com/d615d43ab0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
