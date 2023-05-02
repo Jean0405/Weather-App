@@ -10,7 +10,6 @@ formSearch.addEventListener('submit', (e) => {
     const APIKey = '6257ceb10494963de720e86d19f28e6e';
     const data = Object.fromEntries(new FormData(e.target));
     const city = data.city;
-    console.log(data)
 
     if (city === '') {
         container.style.height = '4rem';
@@ -78,4 +77,5 @@ formSearch.addEventListener('submit', (e) => {
             container.style.height = '38rem';
         })
 
+formSearch.reset(); 
 });
